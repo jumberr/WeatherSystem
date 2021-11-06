@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherSystem", "WeatherSystem\WeatherSystem.csproj", "{990A0D71-FFE5-476D-90C4-871C6D67FAE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{20BA4AE9-92DE-4AFE-88F9-B4062AFF918C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Tests", "DAL.Tests\DAL.Tests.csproj", "{6F5CE880-DD62-4E21-996D-4807A837FE65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{990A0D71-FFE5-476D-90C4-871C6D67FAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{990A0D71-FFE5-476D-90C4-871C6D67FAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{990A0D71-FFE5-476D-90C4-871C6D67FAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20BA4AE9-92DE-4AFE-88F9-B4062AFF918C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20BA4AE9-92DE-4AFE-88F9-B4062AFF918C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20BA4AE9-92DE-4AFE-88F9-B4062AFF918C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20BA4AE9-92DE-4AFE-88F9-B4062AFF918C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F5CE880-DD62-4E21-996D-4807A837FE65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5CE880-DD62-4E21-996D-4807A837FE65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5CE880-DD62-4E21-996D-4807A837FE65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5CE880-DD62-4E21-996D-4807A837FE65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
