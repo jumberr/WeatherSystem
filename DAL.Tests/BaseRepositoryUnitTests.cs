@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using DAL.Entities;
+﻿using DAL.Entities;
 using DAL.Repository.Impl;
 using Microsoft.EntityFrameworkCore;
 using Moq;
@@ -99,33 +97,6 @@ namespace DAL.Tests
                     ), Times.Once());
             Assert.Equal(expectedStats, actualStreet);
         }
-
-        [Fact]
-        public void Get_InputId_CalledFindMethodOfDbSetWithCorrect()
-        {
-            // Arrange
-            DbContextOptions opt = new DbContextOptionsBuilder<StatsContext>()
-                .Options;
-            var mockContext = new Mock<StatsContext>(opt);
-            var mockDbSet = new Mock<DbSet<CalculatedStats>>();
-            mockContext
-                .Setup(context =>
-                    context.Set<CalculatedStats>(
-                    ))
-                .Returns(mockDbSet.Object);
-
-            
-            var expected = new List<CalculatedStats> {new(){ID = 1}};
-            mockDbSet.Setup(mock => mock.ToList()).Returns(expected);
-
-            //Act
-            var repository = new TestCalcStatsRepository(mockContext.Object);
-            var actual = repository.GetAll();
-
-            // Assert
-            mockDbSet.Verify(
-                dbSet => dbSet.ToList(), Times.Once());
-            Assert.Equal(expected, actual);
-        }
+        
     }
 }

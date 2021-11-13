@@ -1,5 +1,6 @@
 ﻿using System;
 using DAL.Repository.Impl;
+using DAL.Repository.Interfaces;
 using DAL.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,9 +17,9 @@ namespace DAL.EF
             db = new StatsContext(options);
         }
         
-        public RawStatsRepository RawStats => _rawStatsRepository ??= new RawStatsRepository(db);
+        public IRawStatsRepository RawStatsRepository => _rawStatsRepository ??= new RawStatsRepository(db);
 
-        public CalculatedStatsRepository CalculatedStats => _calculatedStatsRepository ??= new CalculatedStatsRepository(db);
+        public ICalculatedStatsRepository CalculatedStatsRepository => _calculatedStatsRepository ??= new CalculatedStatsRepository(db);
 
         public void Save()
         {

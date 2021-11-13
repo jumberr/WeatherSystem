@@ -1,12 +1,12 @@
 ﻿using System;
-using DAL.Repository.Impl;
+using DAL.Repository.Interfaces;
 
 namespace DAL.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {
-        RawStatsRepository RawStats { get; }
-        CalculatedStatsRepository CalculatedStats { get; }
+        IRawStatsRepository RawStatsRepository { get; }
+        ICalculatedStatsRepository CalculatedStatsRepository { get; }
         void Save();
     }
 }
