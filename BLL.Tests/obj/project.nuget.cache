@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vDHzz7oFzgc/TxzEoB7RbEKuTtIQkXxr//3GJJDe/pl5SiamEuDB3rSW/u6VRMfexJJMdHcPASBFB2Bhr+USwA==",
+  "dgSpecHash": "iXCbFjW2m5ynY/HbaC6c3bTvW23KZQpkb/QzSnEzsp9vjCusXDAQOuQu14JFujLYrWN9bht0++gwXfmXnmb8Cg==",
   "success": true,
   "projectFilePath": "C:\\Users\\tzzad\\RiderProjects\\WeatherSystem\\BLL.Tests\\BLL.Tests.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "C:\\Users\\tzzad\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.9.4\\microsoft.testplatform.objectmodel.16.9.4.nupkg.sha512",
     "C:\\Users\\tzzad\\.nuget\\packages\\microsoft.testplatform.testhost\\16.9.4\\microsoft.testplatform.testhost.16.9.4.nupkg.sha512",
     "C:\\Users\\tzzad\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\tzzad\\.nuget\\packages\\moq\\4.16.1\\moq.4.16.1.nupkg.sha512",
+    "C:\\Users\\tzzad\\.nuget\\packages\\moq\\4.16.0\\moq.4.16.0.nupkg.sha512",
     "C:\\Users\\tzzad\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\tzzad\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\tzzad\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",

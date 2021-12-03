@@ -6,7 +6,6 @@ using BLL.Services.Interfaces;
 using CCL.Security;
 using CCL.Security.Identity;
 using DAL.Entities;
-using DAL.Repository.Impl;
 using DAL.Repository.Interfaces;
 using DAL.UnitOfWork;
 using Moq;
@@ -21,14 +20,14 @@ namespace BLL.Tests
         {
             // Arrange
             IUnitOfWork nullUnitOfWork = null;
-
+//
             // Act
             // Assert
             Assert.Throws<ArgumentNullException>(
                 () => new CalcStatsService(nullUnitOfWork)
             );
         }
-
+//
         [Fact]
         public void GetStats_UserIsAdmin_ThrowMethodAccessException()
         {
@@ -37,12 +36,12 @@ namespace BLL.Tests
             SecurityContext.SetUser(user);
             var mockUnitOfWork = new Mock<IUnitOfWork>();
             var streetService = new CalcStatsService(mockUnitOfWork.Object);
-
+//
             // Act
             // Assert
             Assert.Throws<MethodAccessException>(() => streetService.GetStats(0));
         }
-
+//
         [Fact]
         public void GetStats_StatsFromDAL_CorrectMappingToStatsDTO()
         {
@@ -50,10 +49,10 @@ namespace BLL.Tests
             var user = new Director(1, "test", 1);
             SecurityContext.SetUser(user);
             var statsService = GetStatsService();
-
+//
             // Act
             var statsDto = statsService.GetStats(0).First();
-
+//
             // Assert
             Assert.True(
                 statsDto.ID == 1 &&
@@ -63,7 +62,7 @@ namespace BLL.Tests
                 statsDto.MaxWindPower == 17
             );
         }
-
+//
         private ICalcStatsService GetStatsService()
         {
             var mockContext = new Mock<IUnitOfWork>();
@@ -89,9 +88,9 @@ namespace BLL.Tests
                 .Setup(context =>
                     context.CalculatedStatsRepository)
                 .Returns(mockDbSet.Object);
-
+//
             ICalcStatsService calcStatsService = new CalcStatsService(mockContext.Object);
-
+//
             return calcStatsService;
         }
     }
