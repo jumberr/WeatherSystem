@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using AutoMapper;
 using BLL.DTO;
+using BLL.Services.HelperClasses;
 using BLL.Services.Interfaces;
 using CCL.Security;
 using CCL.Security.Identity;
@@ -13,7 +14,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BLL.Services.Impl
 {
-    public class CalcStatsService : ICalcStatsService
+    public class CalcStatsService : Component, ICalcStatsService
     {
         private readonly IUnitOfWork _database;
         private int pageSize = 10;

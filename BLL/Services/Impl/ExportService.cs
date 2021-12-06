@@ -1,5 +1,6 @@
 ﻿using System;
 using BLL.DTO;
+using BLL.Services.HelperClasses;
 using BLL.Services.Interfaces;
 
 namespace BLL.Services.Impl
@@ -11,13 +12,13 @@ namespace BLL.Services.Impl
         NotImplemented
     }
 
-    public class ExportService : IExportService
+    public class ExportService : Component, IExportService
     {
         private static ExportService _instance;
 
         private ExportService() { }
 
-        public static IExportService Instance
+        public static ExportService Instance
         {
             get
             {

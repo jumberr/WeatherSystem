@@ -9,5 +9,7 @@
     &lt;TestId&gt;xUnit::3B363241-14CE-4645-A6C4-FEB503D64C44::net5.0::BLL.Tests.ExportServiceTests.Instance_UseInstance_EqualResult&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::3B363241-14CE-4645-A6C4-FEB503D64C44::net5.0::BLL.Tests.ExportServiceTests.Instance_GetInstance_NotNullResult&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::3B363241-14CE-4645-A6C4-FEB503D64C44::net5.0::BLL.Tests.ExportServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::3B363241-14CE-4645-A6C4-FEB503D64C44::net5.0::BLL.Tests.CompositeTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::3B363241-14CE-4645-A6C4-FEB503D64C44::net5.0::BLL.Tests.OrderServiceTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
