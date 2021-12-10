@@ -10,7 +10,7 @@ namespace BLL.Services.HelperClasses
             _donate = donate;
         }
 
-        public int Pay(int value)
+        public float Pay(int value)
         {
             return _donate.GiveADonate(value);
         }

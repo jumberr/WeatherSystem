@@ -6,11 +6,8 @@ using BLL.Services.HelperClasses;
 using BLL.Services.Interfaces;
 using CCL.Security;
 using CCL.Security.Identity;
-using DAL.EF;
 using DAL.Entities;
-using DAL.Repository.Impl;
 using DAL.UnitOfWork;
-using Microsoft.EntityFrameworkCore;
 
 namespace BLL.Services.Impl
 {

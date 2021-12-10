@@ -2,6 +2,7 @@
 {
     public interface IDonateService
     {
-        int GiveADonate(int value);
+        float CurrentPercent { get; }
+        float GiveADonate(int value);
     }
 }

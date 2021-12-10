@@ -2,6 +2,6 @@
 {
     public interface ISubscriptionService
     {
-        int Pay(int value);
+        float Pay(int value);
     }
 }

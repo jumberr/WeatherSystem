@@ -4,13 +4,13 @@ namespace CCL.Security
 {
     public static class SecurityContext
     {
-        private static User _user = null;
+        private static Person _person = null;
 
-        public static User GetUser() => _user;
+        public static Person GetUser() => _person;
 
-        public static void SetUser(User user)
+        public static void SetUser(Person person)
         {
-            _user = user;
+            _person = person;
         }
     }
 }

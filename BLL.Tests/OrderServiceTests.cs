@@ -30,7 +30,7 @@ namespace BLL.Tests
             var value = 100;
             var result = orderService.Order(subscriptionService, value);
             Assert.NotEqual(value, result);
-            Assert.Equal(value / 100, result);
+            Assert.Equal(value * donateService.CurrentPercent, result);
         }
     }
 }

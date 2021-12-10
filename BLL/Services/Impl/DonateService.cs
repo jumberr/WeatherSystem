@@ -1,12 +1,33 @@
 ﻿using BLL.Services.Interfaces;
+using BLL.Services.Observer.Interfaces;
 
 namespace BLL.Services.Impl
 {
-    public class DonateService : IDonateService
+    public class DonateService : IDonateService, IObserver
     {
-        public int GiveADonate(int value)
+        public float MaxSubsPrice = 3;
+        public float OneStepPercent = 0.02f;
+        
+        private float currentPercent = 0.05f;
+        public float CurrentPercent => currentPercent;
+
+        public float GiveADonate(int value)
         {
-            return value / 100;
+            return value * CurrentPercent;
+        }
+
+        public void Update(object ob)
+        {
+            //var donateMultiplayer = currentPercent;
+            var subscriptionPrice = (float) ob;
+            if (subscriptionPrice > MaxSubsPrice)
+            {
+                currentPercent -= OneStepPercent;
+            }
+            else
+            {
+                currentPercent += OneStepPercent;
+            }
         }
     }
 }
