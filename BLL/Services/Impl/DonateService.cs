@@ -18,7 +18,6 @@ namespace BLL.Services.Impl
 
         public void Update(object ob)
         {
-            //var donateMultiplayer = currentPercent;
             var subscriptionPrice = (float) ob;
             if (subscriptionPrice > MaxSubsPrice)
             {
